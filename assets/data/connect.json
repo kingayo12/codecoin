@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "wname": "1Inch Wallet",
+        "btitle": "connect",
+        "button-link": "/",
+        "image": "/crypto/1inch.png"
+    },
+    {
+        "id": 2,
+        "walletname": "cus Wallet",
+        "buttontitle": "connect",
+        "button-link": "/",
+        "image": "/crypto/1inch.png"
+    }
+]
