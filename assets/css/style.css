@@ -4,31 +4,25 @@
     display: flex;
     flex-direction: row;
     /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
-    background:url(../img/thiz.gif) no-repeat center center fixed;
+   
+}
+body{
+    /* background:url("../img/thiz.gif") no-repeat center center fixed; */
+    background:#000 ;
     background-size: cover;
     /* background:url(../img/playbg.gif) no-repeat center center fixed; */
 background-size: cover;
 }
 ::-webkit-scrollbar-thumb{
     width: 5px;
-    background: #0000000b;
-    border-radius: 20px;
-}
-::-webkit-scrollbar-thumb:hover{
-    width: 5px;
     background: transparent;
     border-radius: 20px;
 }
-::-webkit-scrollbar-button{
-    visibility: visible;
-    background: transparent;
-    width: 10px;
-    margin: 10px;
-}
+
+
 ::-webkit-scrollbar{
     background: transparent;
-    width: 10px;
-    margin: 10px;
+    width: 1px;
 }
 body{
     scroll-behavior: smooth;
@@ -139,7 +133,7 @@ nav{
     font-size: 20px;
 }
 .nav-cl{
-    color: #000;
+    color: #9b9a9a;
     font-size: 16px;
     margin-left: 16px;
     display: none;
@@ -233,7 +227,7 @@ h2{
     /* background: url(../img/patterns.png) no-repeat #fff;
     background-size:contain ;
     background-position: 180px; */
-    background: #ffffff26;
+    background: linear-gradient(to right, #008000, #020264);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -251,7 +245,10 @@ h2{
 .box:hover{
     animation: bounce 2s ease infinite forwards 10ms;
     /* background: rgba(0, 128, 0, 0.1); */
-    box-shadow: 2px 3px 6px #1f1f1f52;
+    /* box-shadow: 2px 3px 6px #1f1f1f52; */
+    box-shadow: 2px 1px 4px #008000, -2px -1px 4px #020264dc;
+    /* background: linear-gradient(to right, #008000, #020264); */
+    color: #fff;
 
     /* background: url(../img/patterns.png) no-repeat rgba(0, 128, 0, 0.1); */
     /* background-size:contain ;
@@ -315,7 +312,7 @@ h2{
     font-weight: 500;
     font-family: sans-serif;
     margin-right: 20px;
-    color: #262525;
+    color: #696868;
     /* text-shadow: 1px 2px 2px #000; */
 
     /* text-align: justify; */
@@ -338,18 +335,41 @@ h2{
     background-size: cover;
     border-radius: 50%;
     background-position: 0 -60px;
-    box-shadow: 2px 3px 4px #000000, -2px -3px 4px #ccc;
+    box-shadow: 2px 3px  4px rgba(2, 2, 99, 0.671),
+     -2px -3px  4px rgba(0, 128, 0, 0.493),
+     -2px 6px 40px rgba(0, 128, 0, 0.527),
+     2px -3px 50px rgba(2, 2, 99, 0.61);
     transform-style: preserve-3d;
     filter: drop-shadow(2px 2px 3px #000000);
     margin-top: -20px;
     /* overflow: visible; */
     transition: all 400ms ease;
+    /* transform: rotate(360deg); */
 }
-.ab-img:hover{
-    animation: rotate 2s linear ;
+.abtme:hover{
+    animation: shadowchange 2s linear infinite ;
     /* transform: perspective(1000px) rotateX(45deg); */
 
 
+}
+@keyframes shadowchange {
+    from{
+        box-shadow: 2px 3px  4px rgba(0, 128, 0, 0.493),
+     -2px -3px  4px rgba(2, 2, 99, 0.671),
+     2px -3px 50px rgb(235, 14, 14),
+     -2px 6px 40px rgb(0, 255, 0)
+     ;
+     transform: rotate(0);
+    }
+    to{
+        box-shadow: 2px 3px 4px gold,
+        -2px -3px 4px goldenrod,
+        -2px 4px 30px green,
+        2px 4px 30px rgb(2, 2, 99);
+        transform: rotate(360deg);
+
+    }
+  
 }
 .btn2{
     width: 300px;
@@ -456,13 +476,15 @@ h2{
 .news{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding: 20px;
 }
 .news-content{
     /* background: green; */
     border: 2px solid #fff;
     border-radius: 20px;
     overflow: hidden;
-    width: 300px;
+    width: 100%;
     margin-top: 30px;
     background: #ffffff39;
     backdrop-filter: blur(20px);
@@ -529,7 +551,7 @@ h2{
     font-weight: 600;
 }
 .news-let-input input{
-    width: 600px;
+    width: 500px;
     height: 50px;
     padding: 10px;
     outline: none;
@@ -573,44 +595,200 @@ footer p{
 .siiec{
     width: 500px;
 }
+
+
+
+/* -----------------------------connect section----------------------------------- */
 .connect-body{
     width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    /* background: blue; */
 }
 .connect-search{
     width: 100%;
     height: 60px;
-    /* background: #ccc; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background: #fff; */
+    padding: 20px;
 }
 .connect-search input{
     width: 300px;
     height: 40px;
     padding: 10px;
     border-radius: 20px;
-    border-style: none;
+    border:1px solid #2323234e;
     outline: none;
-    background: #ffffffa1;
+    background: #ffffff49;
     backdrop-filter: blur(20px);
-    box-shadow: 2px 3px 4px #2a2a2a, -2px -2px 4px #e9e9e9;
+    box-shadow: 2px 3px 4px #2a2a2a5f;
 
 }
 .wallets{
-    width: 100%;
-    height: calc(100% - 60px);
-    /* background: green; */
-    overflow-y: scroll;
+    /* height: calc(100% - 60px); */
+    min-height: fit-content;
+    width: fit-content;
+    clear: both;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background: gray; */
+    box-sizing: border-box;
 }
 .wallet-box{
-    width: 200px;
+    width: 220px;
     height: 100px;
-    background: #ffffff1e;
+    background: hsla(0, 0%, 100%, 0.068);
+    backdrop-filter: blur(10px);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     padding: 10px;
+    box-shadow: 2px 3px 4px #ffffff42;
+    margin: 10px;
+    gap: 1rem;
+    border-radius: 10px;
 }
+.wallet-box .image{
+    /* background: green; */
+    display: flex;
+
+    align-items: center;
+}
+/* .conbox{
+    background: #0e0d0d31;
+    z-index: 0;
+    width: 270px;
+    left: 0;
+    height: 120px;
+    top: 0;
+    position: absolute;
+} */
+.color-gold{
+    color: gold;
+    font-size: 13px;
+    text-shadow: 1px 2px 3px goldenrod;
+}
+.cname{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.wname{
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.ratings{
+    margin-top: -13px;
+    padding: 2px;
+    margin-bottom: 6px;
+}
+.btitle{
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border-style: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    box-shadow: 2px 3px 4px #00000056, -2px -3px 4px #e9e9e95b;
+    background: transparent;
+    color: #9c9a9a;
+
+}
+.btitle:hover{
+    background: #0000004d;
+    border-bottom: 2px solid #070707;
+    border-bottom-style: groove;
+
+
+}
+.btitle .ges{
+    animation: mvu 1s ease infinite;
+    font-weight: 800;
+}
+@keyframes mvu {
+    0%{
+        margin-left: 10px;
+    }
+    50%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 10px;
+    }
+}
+/* _____________Crypto currencies----------------------------- */
+.crypto_main{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px;
+    gap: .5rem;
+    overflow-y: scroll;
+}
+.crypt-box{
+    width: 90%;
+    background: #00000093;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 3px 4px #0000004b;
+    border-radius: 10px;
+    border:2px solid transparent;
+}
+.crypt-box:hover{
+    border: 2px solid green;
+    box-shadow: 2px 1px 4px #00800050, -2px -1px 4px #0202644f;
+
+}
+.image_name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    /* background: green; */
+}
+.price{
+    width: 200px;
+    text-align: left;
+    color: #ffffffb0;
+}
+.marketcap{
+    color: #ffffffb0;
+}
+.daily-change{
+    color: #ffffffb0;
+}
+.crypto-img{
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+.crypto-img img{
+    width: 100%;
+}
+.mr{
+    margin-right: 10px;
+}
+.hidden {
+    display: none;
+  }

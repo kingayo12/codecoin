@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="import" href="./assets/data/data.json">
-    <title>CodeCoin</title>
+    <title>CodeCoin-cryptocurrencies</title>
 </head>
 <body>
     <div class="main">
@@ -23,11 +22,11 @@
                     <i class="fa-solid fa-house icon-size icon-color ml-2"></i>
                     <h4 class="nav-cl">Home</h4>
                 </a>
-                <a href="./assets/html/cryptocurrencies.html" onclick="loadContent('/assets/html/cryptocurrencies.html'); return false;">
+                <a href="/cryptocurrencies.html">
                     <i class="fa-solid fa-chart-line icon-size icon-color ml-2"></i>
                     <h4 class="nav-cl">Cryptocurrencies</h4>
                 </a>
-                <a href="/news" onclick="loadContent('/news'); return false;">
+                <a href="./assets/html/main.html">
                     <i class="fa-solid fa-lightbulb icon-size icon-color ml-2"></i>
                     <h4 class="nav-cl">News</h4>
                 </a>
@@ -35,8 +34,7 @@
         </aside>
         <main class="yes" >
             <header>
-                <p id="currentPath"></p>
-                <a href="/connect" onclick="loadContent('/assets/html/connect.html'); return false;">
+                <a href="./connect.html">
                     connect
                     <i class="fa-solid fa-wallet icon-size icon-color2 ml-2"></i>
                 </a>
@@ -272,20 +270,9 @@
         </main>
     </div>
 
-    <script>
-        function loadContent(url) {
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    const mainContent = document.getElementById('main-content');
-                    mainContent.innerHTML = data;
-                })
-                .catch(error => console.log(error));
-        }
-    </script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/data.js"></script>
-    <script src="./assets/js/crypto.js"></script>
+    <!-- <script src="./assets/js/crypto.js"></script> -->
 
 </body>
 </html>
