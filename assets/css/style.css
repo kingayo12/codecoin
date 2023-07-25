@@ -65,14 +65,16 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    font-size: 20px;
     background: transparent;
     outline: none;
+    font-weight: 800;
     /* box-shadow: 2px 3px 3px #ccc; */
 
-    border-style: none;
+    border:2px solid #cccccc60;
 }
 #collapse:hover{
-    background: rgba(0, 0, 0, 0.122) ;
+    background: rgba(255, 255, 255, 0.623) ;
     /* border-left:2px solid rgba(0, 128, 0, 0.701) ; */
 
 }
@@ -416,10 +418,11 @@ h2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3rem;
     width: 95%;
+    
 }
 .coins{
     width: 100%;
-    background: rgba(255, 255, 255, 0.584);
+    background: rgba(255, 255, 255, 0.192);
     height: 150px;
     padding: 10px;
     display: flex;
@@ -427,11 +430,14 @@ h2{
     gap: .5rem;
     border-radius: 5px;
     backdrop-filter: blur(20px);
+    box-shadow: 2px 3px 4px #00800050, -2px -3px 4px #0202644f;
     /* border: 5px solid #020264; */
     margin-top: 30px;
 }
 .coins:hover{
-    box-shadow: 2px 3px 4px #272626a8, -2px -3px 4px #ccccccbc;
+    box-shadow: 5px 6px 4px #00800050, -5px -6px 4px #0202644f;
+    background: linear-gradient(to right, #008000, #020264);
+    color: #fff;
 }
 .coin-header{
     width: 100%;
@@ -439,6 +445,7 @@ h2{
    border-bottom: 2px solid #ccc;
    display: flex;
    flex-direction: row;
+   align-items: center;
    justify-content: space-between;
    background: linear-gradient(to right, rgb(2, 2, 99), green);
    color: transparent;
@@ -514,7 +521,7 @@ h2{
 }
 .uit{
     padding: 10px;
-    color: #000;
+    color: #bbbbbb;
     font-weight: 500;
     max-height: 100px;
     text-overflow: ellipsis;
@@ -624,7 +631,7 @@ footer p{
     border-radius: 20px;
     border:1px solid #2323234e;
     outline: none;
-    background: #ffffff49;
+    background: #00000049;
     backdrop-filter: blur(20px);
     box-shadow: 2px 3px 4px #2a2a2a5f;
 
