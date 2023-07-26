@@ -4,14 +4,14 @@
         height: 100vh;
         display: flex;
         flex-direction: row;
+        background:#000000dc ;
         /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
        
     }
     body{
         /* background:url("../img/thiz.gif") no-repeat center center fixed; */
-        background:#000 ;
         background-size: cover;
-        /* background:url(../img/playbg.gif) no-repeat center center fixed; */
+        background:url(../img/playbg.gif) no-repeat center center fixed;
     background-size: cover;
     }
     ::-webkit-scrollbar-thumb{
