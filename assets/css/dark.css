@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     background: #000000a1;
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616));
    
 }
 
@@ -229,9 +229,10 @@ h2{
     /* background: url(../img/patterns.png) no-repeat #fff;
     background-size:contain ;
     background-position: 180px; */
-    background: linear-gradient(to right, #008000, #020264);
+    /* background: linear-gradient(to right, #008000, #020264); */
     backdrop-filter: blur(10px);
     display: flex;
+    background: #0000003f;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -248,7 +249,7 @@ h2{
     animation: bounce 2s ease infinite forwards 10ms;
     /* background: rgba(0, 128, 0, 0.1); */
     /* box-shadow: 2px 3px 6px #1f1f1f52; */
-    box-shadow: 2px 1px 4px #008000, -2px -1px 4px #020264dc;
+    box-shadow: 2px 1px 4px #111111, -2px -1px 4px #ffffffdc;
     /* background: linear-gradient(to right, #008000, #020264); */
     color: #fff;
 
@@ -422,7 +423,7 @@ h2{
 }
 .coins{
     width: 100%;
-    background: rgba(255, 255, 255, 0.192);
+    background: rgba(0, 0, 0, 0.411);
     height: 150px;
     padding: 10px;
     display: flex;
@@ -430,13 +431,12 @@ h2{
     gap: .5rem;
     border-radius: 5px;
     backdrop-filter: blur(20px);
-    box-shadow: 2px 3px 4px #00800050, -2px -3px 4px #0202644f;
+    box-shadow: 2px 4px 4px #000000b9, -2px -4px 4px #dbdbdbb6;
     /* border: 5px solid #020264; */
     margin-top: 30px;
 }
 .coins:hover{
-    box-shadow: 5px 6px 4px #00800050, -5px -6px 4px #0202644f;
-    background: linear-gradient(to right, #008000, #020264);
+    background: linear-gradient(to right, #00800060, #02026452);
     color: #fff;
 }
 .coin-header{
@@ -493,7 +493,7 @@ h2{
     overflow: hidden;
     width: 100%;
     margin-top: 30px;
-    background: #ffffff39;
+    background: #00000039;
     backdrop-filter: blur(20px);
 
 }
@@ -521,7 +521,7 @@ h2{
 }
 .uit{
     padding: 10px;
-    color: #bbbbbb;
+    color: #e7e7e7;
     font-weight: 500;
     max-height: 100px;
     text-overflow: ellipsis;
