@@ -1,36 +1,5 @@
 @media screen and (min-width: 1366px ) {
-    .main{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        background:#000000dc ;
-        /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
-       
-    }
-    body{
-        /* background:url("../img/thiz.gif") no-repeat center center fixed; */
-        background-size: cover;
-        background:url(../img/playbg.gif) no-repeat center center fixed;
-    background-size: cover;
-    }
-    ::-webkit-scrollbar-thumb{
-        width: 5px;
-        background: transparent;
-        border-radius: 20px;
-    }
     
-    
-    ::-webkit-scrollbar{
-        background: transparent;
-        width: 1px;
-    }
-    body{
-        scroll-behavior: smooth;
-        margin: 0;
-        overflow: hidden;
-        /* background:linear-gradient(to bottom right, #020264, #080); */
-    }
     aside{
         width: 80px;
         min-width: 80px;
@@ -288,10 +257,9 @@
     }
     .ab-cont{
         width: 50%;
-        background: linear-gradient(to right, transparent , transparent);
         border-radius: 20px;
         margin-left: -50px;
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
     
     }
     .ab-cont h1{
@@ -812,38 +780,7 @@
 }
 
 @media screen and (max-width: 1024px ) {
-    .main{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
-       
-    }
-    body{
-        /* background:url("../img/thiz.gif") no-repeat center center fixed; */
-        background:#000 ;
-        background-size: cover;
-        /* background:url(../img/playbg.gif) no-repeat center center fixed; */
-    background-size: cover;
-    }
-    ::-webkit-scrollbar-thumb{
-        width: 5px;
-        background: transparent;
-        border-radius: 20px;
-    }
-    
-    
-    ::-webkit-scrollbar{
-        background: transparent;
-        width: 1px;
-    }
-    body{
-        scroll-behavior: smooth;
-        margin: 0;
-        overflow: hidden;
-        /* background:linear-gradient(to bottom right, #020264, #080); */
-    }
+   
     aside{
         width: 80px;
         min-width: 80px;
@@ -1101,10 +1038,9 @@
     }
     .ab-cont{
         width: 50%;
-        background: linear-gradient(to right, transparent , transparent);
         border-radius: 20px;
         margin-left: -50px;
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
     
     }
     .ab-cont h1{

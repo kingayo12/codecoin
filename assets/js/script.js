@@ -1,6 +1,6 @@
 const collapse = document.querySelector('#collapse');
 const aside = document.querySelector('aside');
-const main = document.querySelector('main');
+const main = document.querySelector('.yes');
 const arrow = document.querySelector('i');
 const out= document.querySelector('.out');
 const navCls= document.querySelectorAll('.nav-cl');
@@ -25,15 +25,30 @@ main.addEventListener('click', () =>{
 
 })
 
-wcnt.addEventListener('click', () =>{
-    aside.classList.remove('expand')
-    out.classList.remove('in')
-    arrow.classList.remove('fa-arrow-left')
-    navCls.forEach((navCl) => {
-        navCl.classList.remove('in')  
-    });
+// cnt.addEventListener('click', () =>{
+//     alert('me')
+//     aside.classList.remove('expand')
+//     out.classList.remove('in')
+//     arrow.classList.remove('fa-arrow-left')
+//     navCls.forEach((navCl) => {
+//         navCl.classList.remove('in')  
+//     });
 
-})
+// })
+
+let isDarkMode = false;
+
+function toggleTheme() {
+  const stylesheet = document.getElementById("stylesheet");
+  if (isDarkMode) {
+    stylesheet.href = "./assets/css/style.css";
+    isDarkMode = false;
+  } else {
+    stylesheet.href = "./assets/css/dark.css";
+    isDarkMode = true;
+  }
+}
+
 
 
 

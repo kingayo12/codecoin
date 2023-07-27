@@ -3,11 +3,11 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background: #000000a1;
     /* background: linear-gradient(to right, rgba(255, 255, 255, 0.742), rgba(0, 140, 255, 0.616)); */
-    background: #000000da;
-    backdrop-filter: blur(10px);
    
 }
+
 body{
     scroll-behavior: smooth;
     margin: 0;
@@ -18,6 +18,7 @@ body{
     background-size: cover;
     /* background:linear-gradient(to bottom right, #020264, #080); */
 }
+
 ::-webkit-scrollbar-thumb{
     width: 5px;
     background: transparent;
@@ -29,7 +30,6 @@ body{
     background: transparent;
     width: 1px;
 }
-
 aside{
     width: 80px;
     min-width: 80px;
@@ -100,7 +100,7 @@ main{
     font-weight: 700;
     font-family: sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -120,7 +120,7 @@ nav{
     margin-top: 10px;
 }
 .icon-color{
-    background: linear-gradient(to right, rgb(0, 68, 255), rgb(0, 255, 0));
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -177,14 +177,14 @@ header{
 header a{
     position: absolute;
     right: 20px;
-    background: linear-gradient(to right, rgb(0, 68, 255), rgba(0, 128, 0, 0.8));
+    background: linear-gradient(to right, rgb(2, 2, 99, 0.8), rgba(0, 128, 0, 0.8));
     padding: 5px 10px;
     color: #fff;
     text-transform: capitalize;
     border-radius: 20px;
 }
 header a:hover{
-    background: linear-gradient(to right, rgb(0, 68, 255), #008000);
+    background: linear-gradient(to right, #020264, #008000);
 
 }
 .contents{
@@ -203,7 +203,7 @@ h2{
     font-family: sans-serif;
 }
 .icon-color4{
-    background: linear-gradient(to right bottom, rgb(0, 68, 255) 20%, green 80%);
+    background: linear-gradient(to right bottom, rgb(2, 2, 99) 20%, green 80%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -229,7 +229,7 @@ h2{
     /* background: url(../img/patterns.png) no-repeat #fff;
     background-size:contain ;
     background-position: 180px; */
-    background: linear-gradient(to right, #008000, rgb(0, 68, 255));
+    background: linear-gradient(to right, #008000, #020264);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -287,9 +287,10 @@ h2{
 }
 .ab-cont{
     width: 50%;
+    background: linear-gradient(to right, transparent , transparent);
     border-radius: 20px;
     margin-left: -50px;
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
 
 }
 .ab-cont h1{
@@ -298,7 +299,7 @@ h2{
     text-transform: uppercase;
     margin-right: 20px;
     padding: 30px;
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -336,10 +337,10 @@ h2{
     background-size: cover;
     border-radius: 50%;
     background-position: 0 -60px;
-    box-shadow: 2px 3px  4px rgba(0, 68, 255, 0.192),
+    box-shadow: 2px 3px  4px rgba(2, 2, 99, 0.671),
      -2px -3px  4px rgba(0, 128, 0, 0.493),
      -2px 6px 40px rgba(0, 128, 0, 0.527),
-     2px -3px 50px rgba(0, 68, 255, 0.171);
+     2px -3px 50px rgba(2, 2, 99, 0.61);
     transform-style: preserve-3d;
     filter: drop-shadow(2px 2px 3px #000000);
     margin-top: -20px;
@@ -380,7 +381,7 @@ h2{
     border-style: none;
     color: #fff;
     box-shadow: 2px 3px 1px #00f72563;
-    background: linear-gradient(to right, rgb(0, 68, 255), rgba(0, 128, 0, 0.8));
+    background: linear-gradient(to right, rgb(2, 2, 99, 0.8), rgba(0, 128, 0, 0.8));
 
 }
 @keyframes rotate {
@@ -404,7 +405,7 @@ h2{
     font-family: sans-serif;
     font-weight: 600;
     margin-left: 20px;
-    background: linear-gradient(to bottom, rgb(0, 68, 255), green);
+    background: linear-gradient(to bottom, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -421,8 +422,7 @@ h2{
 }
 .coins{
     width: 100%;
-    background: linear-gradient(to right bottom, rgba(0, 68, 255, 0.527), #080);
-
+    background: rgba(255, 255, 255, 0.192);
     height: 150px;
     padding: 10px;
     display: flex;
@@ -430,14 +430,14 @@ h2{
     gap: .5rem;
     border-radius: 5px;
     backdrop-filter: blur(20px);
-    /* box-shadow: 2px 3px 3px 1px #f8f8f850, -2px -3px 3px 1px rgba(255, 255, 255, 0.233); */
+    box-shadow: 2px 3px 4px #00800050, -2px -3px 4px #0202644f;
+    /* border: 5px solid #020264; */
     margin-top: 30px;
 }
 .coins:hover{
-    box-shadow: 5px 6px 20px #00fa006c, -4px -6px 20px rgba(0, 140, 255, 0.575);
-    /* background: linear-gradient(to right bottom, rgba(0, 68, 255, 0.527), #080); */
+    box-shadow: 5px 6px 4px #00800050, -5px -6px 4px #0202644f;
+    background: linear-gradient(to right, #008000, #020264);
     color: #fff;
-    /* font-weight: 800; */
 }
 .coin-header{
     width: 100%;
@@ -447,18 +447,17 @@ h2{
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   background: linear-gradient(to right, rgb(0, 68, 255), green);
+   background: linear-gradient(to right, rgb(2, 2, 99), green);
    color: transparent;
    background-clip: text;
    -webkit-background-clip: text;
 }
 .icon-color3{
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-weight: 800;
-    font-family: sans-serif;
+    font-weight: 600;
 }
 .coin-det{
     /* background: #fff;     */
@@ -472,13 +471,13 @@ h2{
     font-family: sans-serif;
     font-weight: 600;
     font-size: 30px;
-    background: linear-gradient(to bottom, rgb(0, 68, 255), green);
+    background: linear-gradient(to top, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
 .bg-primary{
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
 }
 /* -------------------------------------latest news--------------------------------------------- */
 .news{
@@ -494,8 +493,8 @@ h2{
     overflow: hidden;
     width: 100%;
     margin-top: 30px;
-    background: rgba(3, 3, 3, 0.116);
-    /* backdrop-filter: blur(5px); */
+    background: #ffffff39;
+    backdrop-filter: blur(20px);
 
 }
 .news-content:hover{
@@ -515,7 +514,7 @@ h2{
     font-weight: 600;
     font-size: 20px;
     padding: 10px;
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
+    background: linear-gradient(to right, rgb(2, 2, 99), green);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -636,7 +635,6 @@ footer p{
     background: #00000049;
     backdrop-filter: blur(20px);
     box-shadow: 2px 3px 4px #2a2a2a5f;
-    color: #9e9e9e;
 
 }
 .wallets{
@@ -657,8 +655,7 @@ footer p{
     width: 220px;
     height: 100px;
     background: hsla(0, 0%, 100%, 0.068);
-    
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,7 +669,6 @@ footer p{
 }
 .wallet-box:hover{
     box-shadow: 2px 1px 4px #00800050, -2px -1px 4px #ffffff4f;
-    background: linear-gradient(to right, rgb(0, 68, 255), green);
 }
 .wallet-box .image{
     /* background: green; */
@@ -791,19 +787,12 @@ footer p{
     width: 200px;
     text-align: left;
     color: #ffffffb0;
-    font-family: sans-serif;
 }
 .marketcap{
     color: #ffffffb0;
-    font-family: sans-serif;
-}
-.daily_change{
-    color: #ffffffb0;
-    font-family: sans-serif;
 }
 .daily-change{
     color: #ffffffb0;
-    font-family: sans-serif;
 }
 .crypto-img{
     width: 25px;
